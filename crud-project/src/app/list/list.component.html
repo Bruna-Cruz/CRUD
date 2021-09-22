@@ -1,0 +1,27 @@
+
+<h1>Listar Dados</h1>
+
+<div class="card border-primary mb-3">
+    <div class="card-body">
+      <h5 class="card-header">Tabela de dados</h5>
+        <table  id= "table-data" class="table table-hover">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">Título</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Data de Publicação</th>
+              <th scope="col">Categoria</th>
+            </tr>
+          </thead>
+
+          <tbody *ngFor="let item of list" >
+              <tr class="table-secondary">
+                <td scope="row"> {{item.titulo}} </td>
+                <td> {{item.descricao}} </td>
+                <td> {{dateFormat(item.publicacao)}} </td>
+                <td> {{item.categoria}} </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "list": [
+    {
+      "titulo": "titulo 1",
+      "descricao": "descrição 1",
+      "publicacao": "2021-09-06",
+      "categoria": "Categoria 1",
+      "id": 7
+    },
+    {
+      "titulo": "titulo 2",
+      "descricao": "descrição 2",
+      "publicacao": "2021-09-20",
+      "categoria": "Categoria 2",
+      "id": 8
+    },
+    {
+      "titulo": "titulo 3",
+      "descricao": "descrição 3",
+      "publicacao": "2021-08-31",
+      "categoria": "Categoria 3",
+      "id": 9
+    }
+  ]
+}
