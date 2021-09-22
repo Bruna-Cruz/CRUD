@@ -2,7 +2,7 @@
 
 Esse projeto é uma aplicação com um CRUD com tela de listagem e edição.
 
-## Requisitos:
+## Requisitos
 
 Angular CLI (v12.2.6)
 Node.js (v15.14.0)
@@ -14,23 +14,23 @@ O HttpClient foi simulado utilizando uma API REST falsa com o json-server.
 
 No diretório raiz e com os dados dentro de db.json no mesmo diretório:
 
-sudo npm install -g json-server
+` sudo npm install -g json-server `
 
-json-server --watch src/assets/data/db.json
+` json-server --watch src/assets/data/db.json `
 
 ### Angular
 
 Para instalar as dependÇencias do projeto é necessário usar o comando na raiz do projeto angular:
 
-npm install
+`npm install `
 
 Para a aparencia foram usadas bootstrap e bootswatch, as demais são citadas junto as funcionalidades
 
 Para iniciar a aplicação:
 
-ng serve
+`ng serve `
 
-## Funcionalidade
+## Funcionalidades
 
 A página inicial é a de "Listar Dados", que usa o componente e service list.
 
