@@ -4,9 +4,9 @@ Esse projeto é uma aplicação com um CRUD com tela de listagem e edição.
 
 ## Requisitos
 
-Angular CLI (v12.2.6)
-Node.js (v15.14.0)
-Json-server
+- Angular CLI (v12.2.6)
+- Node.js (v15.14.0)
+- Json-server
 
 ### API rest
 
