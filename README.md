@@ -16,29 +16,31 @@ No diretório raiz e com os dados dentro de db.json no mesmo diretório:
 
 ` sudo npm install -g json-server `
 
-` json-server --watch src/assets/data/db.json `
+` json-server --watch db.json `
 
 ### Angular
 
-Para instalar as dependÇencias do projeto é necessário usar o comando na raiz do projeto angular:
+Para instalar as depedências do projeto é necessário usar o comando na raiz do projeto angular:
 
 `npm install `
 
-Para a aparencia foram usadas bootstrap e bootswatch, as demais são citadas junto as funcionalidades
+Para a interface foram usados o framework bootstrap e bootswatch, as demais dependências são citadas junto as funcionalidades
 
-Para iniciar a aplicação:
+Para compilar e subir a aplicação:
 
 `ng serve `
 
 ## Funcionalidades
 
-A página inicial é a de "Listar Dados", que usa o componente e service list.
+O objetivo desse projeto é a criação de uma página de visualização dos dados presentes no arquivo db.json e outra página com a funções de edição e adição dos elementos.
 
-A página de Editar Dados usa o componente createEdit e o service list para realizar as requisições de GET, POST e DELETE.
+O modelo item contém a interface com os atributos do elemento esperado no arquivo json db.Json
 
-O modelo item contém a interface com os atributos do item esperado no arquivo json db.Json
+A página inicial chama-se "Listar Dados", que usa o listComponent e listService e requisita a listagem dos daods, tratando dos dados de data da publicação. O listService contêm os metodos de requisição GET, POST, PUT e DELETE para o server contendo o banco de dados.
 
-As APIs HttpClientModule e FormsModule foram usadas para as requisições e o formulário de adição/edição, respectivamente.
+A página de "Editar Dados" usa o createEditComponent e o listService para realizar as requisição de listagem dos dados e de edição, deleção e adição desses itens. 
+
+As APIs HttpClientModule e FormsModule foram usadas para as requisições e o formulário de adição/edição, respectivamente. O ngForm permite a validação dos inputs.
 
 ## Spinner
 
